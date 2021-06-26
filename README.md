@@ -18,3 +18,9 @@
 
 - [*] Update header
     - [*] Add links to navbar      
+
+---- 26/06/2021 ----
+- [*] Add Our team page
+
+- [*] Update header
+    - [*] Add links to navbar          

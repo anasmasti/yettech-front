@@ -24,6 +24,11 @@ const NavBar = () => {
                             <strong> Our services </strong>
                         </a>
                     </Link>
+                    <Link href="/our-team">
+                        <a className="navbar-brand" >
+                            <strong> Our Team </strong>
+                        </a>
+                    </Link>
                     <Link href="/contact">
                         <a className="navbar-brand" >
                             <strong> Contact </strong>
