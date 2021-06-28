@@ -1,4 +1,4 @@
-##### YetTech Front-end ####
+# YetTech Front-end 🚀
 
 ---- 24/06/2021 ----
 - [*] Setup global style 
