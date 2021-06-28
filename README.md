@@ -17,4 +17,10 @@
     - [*] Add our services page.
 
 - [*] Update header
-    - [*] Add links to navbar      
+    - [*] Add links to navbar  
+
+
+---- 28/06/2021 ----
+- [*] Make some style 
+    - [*] Add style to home page
+    - [*] Add style to header component 

@@ -1,15 +1,17 @@
 @use '../helpers' as *;
 
-
-//  Main button 
+//  Main button
 .main-btn {
     background: color(light);
     box-shadow: $btn-box-shadow;
     color: color(dark);
     border-radius: $main-border-radius !important;
+    text-decoration: none;
+    padding: 0.4rem;
+    @include global-transition;
 
     &:hover {
-        background: color(main-color);
+        background: color(blur-color);
         color: color(light) !important;
     }
 }
@@ -20,6 +22,7 @@
     box-shadow: $btn-box-shadow;
     color: color(light) !important;
     border-radius: $main-border-radius !important;
+    text-decoration: none;
 
     &:hover {
         background: color(light) !important;
@@ -28,13 +31,13 @@
     }
 }
 
-
 // Costumize the danger button
 .danger-btn {
     background: color(danger);
     box-shadow: $btn-box-shadow;
     color: color(light) !important;
     border-radius: $main-border-radius !important;
+    text-decoration: none;
 
     &:hover {
         background: color(dark);
@@ -48,6 +51,7 @@
     box-shadow: $btn-box-shadow;
     color: color(light) !important;
     border-radius: $main-border-radius !important;
+    text-decoration: none;
 
     &:hover {
         background: color(dark);
@@ -61,6 +65,7 @@
     box-shadow: $btn-box-shadow;
     color: color(light) !important;
     border-radius: $main-border-radius !important;
+    text-decoration: none;
 
     &:hover {
         background: color(dark);

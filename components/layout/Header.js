@@ -1,9 +1,9 @@
 import Link from 'next/link'
-import style from '../../styles/shared/NavBar.module.scss'
+import headerStyle from '../../styles/shared/Header.module.scss'
 
 const NavBar = () => {
     return (
-        <div className={style.navbar_box}>
+        <div className={headerStyle.header_box}>
             <nav className="navbar navbar-light bg-transparent d-flex justify-content-between p-4">
                 <div >
                     <Link href="/">
@@ -13,23 +13,29 @@ const NavBar = () => {
                     </Link>
 
                 </div>
-                <div>
-                    <Link href="/about">
-                        <a className="navbar-brand" >
-                            <strong> About us </strong>
-                        </a>
-                    </Link>
-                    <Link href="/our-services">
-                        <a className="navbar-brand" >
-                            <strong> Our services </strong>
-                        </a>
-                    </Link>
-                    <Link href="/contact">
-                        <a className="navbar-brand" >
-                            <strong> Contact </strong>
-                        </a>
-                    </Link>
-                </div>
+                <ul className={headerStyle.navbar_items}>
+                    <li>
+                        <Link href="/about">
+                            <a className={[headerStyle.hover_line].join(' ')} >
+                                <strong> About us </strong>
+                            </a>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/our-services">
+                            <a className={[headerStyle.hover_line, 'px-3'].join(' ')} >
+                                <strong> Our services </strong>
+                            </a>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/contact">
+                            <a className={[headerStyle.hover_line].join(' ')} >
+                                <strong> Contact </strong>
+                            </a>
+                        </Link>
+                    </li>
+                </ul>
             </nav>
         </div>
     );

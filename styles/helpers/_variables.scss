@@ -1,6 +1,7 @@
 // Global colors
 $colors: (
-    "main-color": #c190f8,
+    "main-color": #a95ffd,
+    "blur-color": #a95ffd49,
     "body-color": #fefeff,
     "danger": #ffa2a2,
     "success": #25e6bf,
@@ -10,7 +11,7 @@ $colors: (
 );
 
 // Global border radius
-$main-border-radius: 22px;
+$main-border-radius: 33px;
 
 // Global box shadow
 $btn-box-shadow: 1px 6px 14px rgb(142 142 142 / 5%);
