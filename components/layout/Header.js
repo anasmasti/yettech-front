@@ -16,21 +16,28 @@ const NavBar = () => {
                 <ul className={headerStyle.navbar_items}>
                     <li>
                         <Link href="/about">
-                            <a className={[headerStyle.hover_line].join(' ')} >
+                            <a className={[headerStyle.hover_line].join(' ')}>
                                 <strong> About us </strong>
                             </a>
                         </Link>
                     </li>
                     <li>
                         <Link href="/our-services">
-                            <a className={[headerStyle.hover_line, 'px-3'].join(' ')} >
+                            <a className={[headerStyle.hover_line].join(' ')}>
                                 <strong> Our services </strong>
                             </a>
                         </Link>
                     </li>
                     <li>
+                        <Link href="/our-team">
+                            <a className={[headerStyle.hover_line].join(' ')}>
+                                <strong> Our Team </strong>
+                            </a>
+                        </Link>
+                    </li>
+                    <li>
                         <Link href="/contact">
-                            <a className={[headerStyle.hover_line].join(' ')} >
+                            <a className={[headerStyle.hover_line].join(' ')}>
                                 <strong> Contact </strong>
                             </a>
                         </Link>

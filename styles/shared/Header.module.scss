@@ -5,11 +5,14 @@
     height: 10vh;
 }
 
-// Style of nav bar 
+// Style of nav bar
 .navbar_items {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+
     & li {
         list-style: none;
-        display: inline-flex;
     }
 
     & a {
@@ -31,7 +34,7 @@
         height: 0.2rem;
         border-radius: $main-border-radius;
         background-color: color(light);
-        @include global-transition
+        @include global-transition;
     }
 
     &:hover::after {

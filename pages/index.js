@@ -19,12 +19,16 @@ export default function Home() {
           </div>
           <div className={homeStyle.btns_section}>
             <Link href='/contact'>
-              <a className='main-btn px-3'>Contactez-nous</a>
+              <a className='main-btn px-3'>
+                <strong>
+                  Contactez-nous
+                </strong>
+              </a>
             </Link>
           </div>
         </div>
         <div className='col-12 col-lg-6'>
-       
+
         </div>
       </div>
     </div>

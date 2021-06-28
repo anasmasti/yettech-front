@@ -19,8 +19,16 @@
 - [*] Update header
     - [*] Add links to navbar  
 
+---- 26/06/2021 ----
+- [*] Add Our team page
 
+- [*] Update header
+    - [*] Add links to navbar  
+     
 ---- 28/06/2021 ----
 - [*] Make some style 
     - [*] Add style to home page
     - [*] Add style to header component 
+    - [*] Add links to navbar      
+
+       
