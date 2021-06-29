@@ -4,8 +4,8 @@ import homeStyle from '../styles/pages/Home.module.scss';
 
 export default function Home() {
   return (
-    <div className='d-flex justify-content-start align-items-center h-100'>
-      <div className={[homeStyle.home_section, 'row'].join(' ')}>
+    <div className={[homeStyle.home_section, 'd-flex', 'justify-content-start', 'align-items-center', 'h-100'].join(' ')}>
+      <div className='row'>
         <div className='col-12 col-lg-6'>
           <div>
             <h1>

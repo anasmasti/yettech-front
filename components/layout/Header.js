@@ -4,7 +4,7 @@ import headerStyle from '../../styles/shared/Header.module.scss'
 const NavBar = () => {
     return (
         <div className={headerStyle.header_box}>
-            <nav className="navbar navbar-light bg-transparent d-flex justify-content-between p-4">
+            <nav className="navbar bg-transparent d-flex justify-content-between p-4">
                 <div >
                     <Link href="/">
                         <a className="navbar-brand main-title" >

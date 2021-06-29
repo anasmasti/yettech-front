@@ -6,7 +6,7 @@ const MainLayout = ({ children }) => {
     return (
         <>
             <Header />
-            <div className={[style.content_box, 'container'].join(' ')}>
+            <div className={[style.content_box].join(' ')}>
                 {children}
             </div>
             <Footer />
