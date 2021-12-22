@@ -8,7 +8,7 @@ const NavBar = () => {
                 <div >
                     <Link href="/">
                         <a className="navbar-brand main-title" >
-                            <strong> YetTeck </strong>
+                            <strong> YetTech </strong>
                         </a>
                     </Link>
 
