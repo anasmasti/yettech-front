@@ -4,7 +4,7 @@ import headerStyle from '../../styles/shared/Header.module.scss'
 const NavBar = () => {
     return (
         <div className={headerStyle.header_box}>
-            <nav className="navbar bg-transparent d-flex justify-content-between p-4">
+            <nav className="navbar h-100 d-flex justify-content-between p-5 bg-transparent">
                 <div >
                     <Link href="/">
                         <a className="navbar-brand main-title" >
@@ -13,7 +13,7 @@ const NavBar = () => {
                     </Link>
 
                 </div>
-                <ul className={headerStyle.navbar_items}>
+                <ul className={[headerStyle.navbar_items, ' my-auto ' ].join(' ')}>
                     <li>
                         <Link href="/about">
                             <a className={[headerStyle.hover_line].join(' ')}>
