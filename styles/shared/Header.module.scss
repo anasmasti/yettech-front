@@ -2,7 +2,12 @@
 
 // Height of the geader nav bar
 .header_box {
+    position: absolute;
+    top: 0;
     height: 10vh;
+    width: 100%;
+    padding: 1.5rem 6rem 1.5rem 6rem;
+    z-index: 1;
 }
 
 // Style of nav bar
@@ -29,7 +34,7 @@
     &::after {
         content: "";
         display: flex;
-        width: 45%;
+        width: 0%;
         height: 0.2rem;
         border-radius: $main-border-radius;
         background-color: color(light);

@@ -4,13 +4,13 @@ import style from '../styles/layouts/MainLayout.module.scss'
 
 const MainLayout = ({ children }) => {
     return (
-        <>
+        <div>
             <Header />
             <div className={[style.content_box].join(' ')}>
                 {children}
             </div>
             <Footer />
-        </>
+        </div>
     )
 }
 
