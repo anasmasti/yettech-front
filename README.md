@@ -1,2 +1,2 @@
-# YetTech Front-end 🚀
+# YetTech 🚀
      
