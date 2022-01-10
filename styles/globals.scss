@@ -1,6 +1,7 @@
 @use "./components";
 @use "./helpers" as *;
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:ital,wght@0,100;0,400;1,900&display=swap');
 
 html,
 body {
@@ -14,7 +15,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
   overflow-x: hidden;
-  color: color(light) !important;
+  // color: color(light) !important;
 }
 
 a {
@@ -23,12 +24,23 @@ a {
 
 * {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
+// Logo 
 .logo {
   color: white;
   &:hover {
     color: white;
   }
+}
+
+// Global Text 
+.main-text{
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+}
+
+.text-color{
+  color: #35393F;
 }

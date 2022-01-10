@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Youssef sakini1",
+    "faculty": "Web master developer pro max",
+    "description": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
+    "image": "/images/card/main-qimg-e9cb794cb052cd92e94ca11434b29155-lq.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Youssef sakini2",
+    "faculty": "Web master developer pro max",
+    "description": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
+    "image": "/images/card/main-qimg-e9cb794cb052cd92e94ca11434b29155-lq.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Youssef sakini3",
+    "faculty": "Web master developer pro max",
+    "description": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
+    "image": "/images/card/main-qimg-e9cb794cb052cd92e94ca11434b29155-lq.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Youssef sakini4",
+    "faculty": "Web master developer pro max",
+    "description": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
+    "image": "/images/card/main-qimg-e9cb794cb052cd92e94ca11434b29155-lq.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Youssef sakini5",
+    "faculty": "Web master developer pro max",
+    "description": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
+    "image": "/images/card/main-qimg-e9cb794cb052cd92e94ca11434b29155-lq.jpg"
+  }
+]

@@ -11,8 +11,8 @@ const Footer = () => {
         "px-5",
       ].join(" ")}
     >
-      <div>
-        <h6>YetTech 2021 &copy;</h6>
+      <div className="d-flex justify-content-center align-items-center">
+        <h6 className="my-auto">YetTech 2021 &copy;</h6>
       </div>
 
       <div>
