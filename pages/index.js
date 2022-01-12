@@ -1,7 +1,30 @@
 import Link from "next/link";
 import homeStyle from "../styles/pages/Home.module.scss";
+import { useState, useEffect, useCallback } from "react";
 
 export default function Home() {
+  
+  let value 
+  let test = 10
+  
+
+  const [number, setNumber] = useState()
+
+  const changeNumbre = (value) => {
+    setNumber(value) 
+  }
+
+  const changeNumbreMemo = useCallback( () => {
+    changeNumbre(value) 
+  }, [value])
+
+  useEffect(() => {
+    console.log(number);
+    // return () => {
+    //   console.log('derstoy');
+    // }
+  }, [test])
+  
   return (
     <div
       className={[
@@ -37,7 +60,7 @@ export default function Home() {
           Create, share, and get feedback with collaborative sandboxes for rapid web development. */}
           <div className={homeStyle.btns_section}>
             <Link href="/contact">
-              <a className="main-btn px-3">
+              <a className="main-btn px-3" onClick={changeNumbreMemo(5)}>
                 <strong>Contactez-nous</strong>
               </a>
             </Link>

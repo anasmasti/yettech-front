@@ -35,7 +35,7 @@ function NavLinks() {
     <div>
       <ul className={[headerStyle.navbar_items, " p-3 my-auto "].join(" ")}>
         {links.map((link) => (
-          <NavLink key={link.id} title={link.title} href={link.href} />
+          <NavLink key={link.id} title={link.title} href={link.href} exact={true}  activeClassName='is-active'/>
         ))}
       </ul>
     </div>

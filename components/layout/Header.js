@@ -4,7 +4,7 @@ import Logo from '../shared/Logo'
 
 const Header = () => {
   return (
-    <div className={headerStyle.header_box}>
+    <div className={[headerStyle.header_box, "bg-danger"].join(' ')}>
       <nav className="navbar d-flex justify-content-between p-4">
         <div>
           <Logo />
