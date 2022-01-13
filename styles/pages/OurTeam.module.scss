@@ -1,0 +1,28 @@
+@use "../helpers" as *;
+
+.ourteam_content {
+  padding-top: 13rem;
+  // background-color: color(blue-color) !important;
+}
+
+.member_container {
+  width: 100%;
+//   background: green;
+  padding-bottom: 2rem;
+//   background: green;
+}
+
+.member_info {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  & h3{
+      color: color(dark-purple);
+  }
+}
+
+.member_description {
+  width: 70%;
+}

@@ -1,4 +1,14 @@
-// .footer_box {
-    // position: absolute;
-    // bottom: 0;
-// }
+@use "../helpers" as *;
+
+.footer_box {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  & div {
+    color: color(dark-purple);
+  }
+  & h6 {
+    font-weight: bold;
+  }
+}

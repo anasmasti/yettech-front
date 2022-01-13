@@ -7,20 +7,21 @@ $colors: (
   "danger": #ffa2a2,
   "success": #25e6bf,
   "dark": #525252,
-  "light": #ffffff,
+  // "light": #F7F6FD,
+  "light": #F7F6FD,
   "info": #98d3fa,
 // :::::::::::::::::::::
   "blue-color": #23aeff,
   "light-purple": #dcb4ff,
-  "dark-purple": #de51fd
+  "dark-purple": rgb(146, 0, 146)
 );
 
 // Global border radius
-$main-border-radius: 12px;
+$main-border-radius: 20px;
 
 // Global box shadow
 $btn-box-shadow: 1px 6px 14px rgb(142 142 142 / 5%);
-$card-box-shadow: 1px 6px 14px rgb(142 142 142 / 5%);
+$card-box-shadow: 1px 10px 14px rgba(0, 0, 0, 0.1);
 
 // Global font weights
 $font-weights: (
