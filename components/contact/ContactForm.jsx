@@ -1,5 +1,5 @@
 import ContactFormInputsSection from "./ContactFormInputsSection";
-import { contactFormContext } from "./ContactFormContext";
+import { contactFormContext } from "../../helper/contexts/ContactFormContext.jsx";
 import SubmitButton from "./SubmitButton";
 import { useState } from "react";
 

@@ -1,6 +1,6 @@
 import '../styles/globals.scss'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import MainLayout from '../layouts/MainLayout'
+import MainLayout from '../layouts/MainLayout.jsx'
 
 function MyApp({ Component, pageProps }) {
   return (

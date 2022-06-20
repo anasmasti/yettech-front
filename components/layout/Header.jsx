@@ -1,24 +1,39 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import NavLinks from "../header/NavLinks.jsx";
 import headerStyle from "../../styles/shared/Header.module.scss";
 import Logo from "../shared/Logo.jsx";
 
 const Header = () => {
-  useEffect(() => {}, []);
+  const [isHome, setIsHome] = useState(false);
 
-  const getHeaderClass = (test) => {
+  useEffect(() => {
+    checkHrefType();
+  }, []);
+
+  function checkHrefType() {
     if (typeof window !== "undefined") {
       if (window.location.href != "http://localhost:3000/") {
-        console.log(window.location.href);
-        return headerStyle.header_box;
+        setIsHome(true);
+        console.log(window.location.href, true);
+      }
+      if (window.location.href == "http://localhost:3000/") {
+        setIsHome(false);
+        console.log(false);
       }
     }
+  }
+
+  const getHeaderClass = () => {
+    if (isHome) {
+      return headerStyle.header_box;
+    }
+
     return headerStyle.header_box_;
   };
 
   return (
     <div className={getHeaderClass("trest")}>
-      <nav className="navbar d-flex justify-content-between p-4">
+      <nav className="navbar d-flex justify-content-between p-2">
         <div>
           <Logo />
         </div>

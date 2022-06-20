@@ -1,9 +1,10 @@
 @use "../helpers" as *;
 
 .content_box {
-    // height: 100vh - (10vh + 10vh); !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    // position: relative;
+    height: 100vh - (10vh + 10vh);
+    position: relative;
 }
+
 .app_container{
     background-color: color(light);
     position: relative;

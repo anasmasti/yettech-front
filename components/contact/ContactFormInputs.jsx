@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { contactFormContext } from "./ContactFormContext";
+import { contactFormContext } from "../../helper/contexts/ContactFormContext.jsx";
 import ContactFormInput from "./ContactFormInput";
 
 export default function ContactFormInputs({ inputs }) {
