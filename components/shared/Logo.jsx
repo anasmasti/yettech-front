@@ -6,7 +6,7 @@ function Logo() {
     <div>
       <Link href="/">
         <a className={["navbar-brand logo"].join(' ')}>
-          ye<strong>TT</strong>ech
+          Yettech
         </a>
       </Link>
     </div>

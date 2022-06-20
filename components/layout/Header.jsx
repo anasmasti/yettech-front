@@ -4,7 +4,7 @@ import Logo from "../shared/Logo.jsx";
 const Header = () => {
   return (
     <div className="header">
-      <nav className="navbar d-flex justify-content-between p-2">
+      <nav className="navbar d-flex justify-content-between">
         <div>
           <Logo />
         </div>
