@@ -4,7 +4,7 @@ import homeStyle from "../../styles/pages/Home.module.scss";
 import TeamMember from "./TeamMember";
 import MembersData from "../../helper/data/team-members.json";
 
-const Team_Member = () => {
+const OurTeamSection = () => {
   return (
     <>
       {/* Our Team Members */}
@@ -25,4 +25,4 @@ const Team_Member = () => {
   );
 };
 
-export default Team_Member;
+export default OurTeamSection;

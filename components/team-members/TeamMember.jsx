@@ -1,9 +1,8 @@
-import React from "react";
 import OurTeamStyle from "../../styles/pages/OurTeam.module.scss";
 import homeStyle from "../../styles/pages/Home.module.scss";
 import Image from "next/image";
 
-const OurTeam = ({ name, faculty, description, id }) => {
+const TeamMember = ({ name, faculty, description, id }) => {
   return (
     <>
       <div
@@ -64,4 +63,4 @@ const OurTeam = ({ name, faculty, description, id }) => {
   );
 };
 
-export default OurTeam;
+export default TeamMember;

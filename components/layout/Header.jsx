@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import NavLinks from "../header/NavLinks";
+import NavLinks from "../header/NavLinks.jsx";
 import headerStyle from "../../styles/shared/Header.module.scss";
-import Logo from "../shared/Logo";
+import Logo from "../shared/Logo.jsx";
 
 const Header = () => {
   useEffect(() => {}, []);
