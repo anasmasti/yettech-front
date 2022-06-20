@@ -1,32 +1,14 @@
-import { useEffect, useCallback, useMemo, useRef } from "react";
+import { useEffect } from "react";
 import Link from "next/link";
 import homeStyle from "../styles/pages/Home.module.scss";
-// import styled from "styled-components";
 import Cards from "../components/shared/Card";
+import changeTheme from "../helper/services/shared/theme/changeHeaderTheme";
 
 export default function Home() {
-  
-  // let value 
-  // let test = 10
-  
+  useEffect(() => {
+    changeTheme("home");
+  }, []);
 
-  // const [number, setNumber] = useState()
-
-  // const changeNumbre = (value) => {
-  //   setNumber(value) 
-  // }
-
-  // const changeNumbreMemo = useCallback( () => {
-  //   changeNumbre(value) 
-  // }, [value])
-
-  // useEffect(() => {
-  //   console.log(number);
-  //   // return () => {
-  //   //   console.log('derstoy');
-  //   // }
-  // }, [test])
-  
   return (
     <div
       className={[
@@ -35,7 +17,7 @@ export default function Home() {
         "justify-content-center",
         "align-items-center",
         "flex-column",
-        "text-light"
+        "text-light",
       ].join(" ")}
     >
       {/* :::::::::: landing page first view :::::::::: */}
@@ -113,7 +95,7 @@ export default function Home() {
         <div className={[homeStyle.section_container].join(" ")}>
           <h2 className={[homeStyle.title].join(" ")}>Projects we can make</h2>
         </div>
-          <Cards/>
+        <Cards />
       </div>
     </div>
   );
