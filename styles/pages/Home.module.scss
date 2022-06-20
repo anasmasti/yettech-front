@@ -1,10 +1,46 @@
+@use "../helpers" as *;
+
 .home_section {
-    color: color(light);
-    & h1 {
-        font-size: 4rem;
-    }
+  background-color: color(light);
+  & h1 {
+    font-size: 4rem;
+  }
 }
 
 .btns_section {
-    margin-top: 2.5rem !important;
+  margin-top: 2.5rem !important;
+}
+
+.first_view {
+  background: linear-gradient(
+    200deg,
+    color(blue-color) 30%,
+    color(dark-purple)
+  );
+  height: 100vh;
+  position: relative;
+  z-index: 0;
+  // padding-top: 10rem;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+}
+
+.title{
+  width: 100%;
+  color: color(dark-purple);
+  font-weight: bold;
+  font-size: 3rem;
+
+}
+
+.div_section{
+  padding-bottom: 60px;
+  width: 100%;
+}
+
+.section_container{
+  width: 60%;
 }

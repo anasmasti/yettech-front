@@ -2,14 +2,14 @@
 
 //  Main button
 .main-btn {
-    background: color(light);
+    border: 2px solid color(blur-color);
+    background: transparent;
     box-shadow: $btn-box-shadow;
-    color: color(dark);
+    color: white;
     border-radius: $main-border-radius !important;
     text-decoration: none;
-    padding: 0.4rem;
+    padding: 1rem;
     @include global-transition;
-
     &:hover {
         background: color(blur-color);
         color: color(light) !important;

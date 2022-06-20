@@ -1,37 +1,41 @@
 // Global colors
 $colors: (
-    "main-color": #a95ffd,
-    "blur-color": #a95ffd49,
-    "body-color": #fefeff,
-    "transparent-color": #fefeff00,
-    "danger": #ffa2a2,
-    "success": #25e6bf,
-    "dark": #525252,
-    "light": #ffffff,
-    "info": #98d3fa,
+  // "main-color": #a95ffd,
+  "blur-color": #a95ffd49,
+  "body-color": #fefeff,
+  "transparent-color": #fefeff00,
+  "danger": #ffa2a2,
+  "success": #25e6bf,
+  "dark": #525252,
+  // "light": #F7F6FD,
+  "light": #F7F6FD,
+  "info": #98d3fa,
+// :::::::::::::::::::::
+  "blue-color": #23aeff,
+  "light-purple": #dcb4ff,
+  "dark-purple": rgb(146, 0, 146)
 );
 
 // Global border radius
-$main-border-radius: 33px;
+$main-border-radius: 20px;
 
 // Global box shadow
 $btn-box-shadow: 1px 6px 14px rgb(142 142 142 / 5%);
-$card-box-shadow: 1px 6px 14px rgb(142 142 142 / 5%);
+$card-box-shadow: 1px 10px 14px rgba(0, 0, 0, 0.1);
 
 // Global font weights
 $font-weights: (
-    "regular": 400,
-    "bold": 600,
+  "regular": 400,
+  "bold": 600,
 );
 
 // Global font sizes
 $font-sizes: (
-    "small": 12px,
-    "medium": 15px,
-    "large": 20px,
+  "small": 12px,
+  "medium": 15px,
+  "large": 20px,
 );
 
-// Mobile screens 
-$min-screen : 320px;
-$max-screen : 490px;
-
+// Mobile screens
+$min-screen: 320px;
+$max-screen: 490px;

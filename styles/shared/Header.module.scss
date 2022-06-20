@@ -2,7 +2,27 @@
 
 // Height of the geader nav bar
 .header_box {
-    height: 10vh;
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    // padding: 3rem;
+    padding: 1rem 4rem 1rem 4rem;
+    z-index: 1;
+    background: color(dark-purple);
+}
+
+.header_box_ {
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 3rem;
+    // padding: 1rem 4rem 1rem 4rem;
+    z-index: 1;
+    // background: color(dark-purple);
 }
 
 // Style of nav bar
@@ -10,11 +30,10 @@
     display: flex;
     flex-direction: row;
     gap: 1.5rem;
-
     & li {
         list-style: none;
     }
-
+    
     & a {
         color: inherit;
         text-decoration: none;
@@ -30,7 +49,7 @@
     &::after {
         content: "";
         display: flex;
-        width: 45%;
+        width: 0%;
         height: 0.2rem;
         border-radius: $main-border-radius;
         background-color: color(dark);

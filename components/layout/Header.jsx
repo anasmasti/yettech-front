@@ -1,51 +1,46 @@
-import Link from 'next/link'
-import headerStyle from '../../styles/shared/Header.module.scss'
+import React, { useEffect } from "react";
+import NavLinks from "../header/NavLinks";
+import headerStyle from "../../styles/shared/Header.module.scss";
+import Logo from "../shared/Logo";
 
-const NavBar = () => {
-    return (
-        <div className={headerStyle.header_box}>
-            <nav className="navbar bg-transparent d-flex justify-content-between p-4">
-                <div >
-                    <Link href="/">
-                        <a className="navbar-brand main-title" >
-                            <strong> YetTech </strong>
-                        </a>
-                    </Link>
+const Header = () => {
+  useEffect(() => {}, []);
 
-                </div>
-                <ul className={headerStyle.navbar_items}>
-                    <li>
-                        <Link href="/about">
-                            <a className={[headerStyle.hover_line].join(' ')}>
-                                <strong> About us </strong>
-                            </a>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="/our-services">
-                            <a className={[headerStyle.hover_line].join(' ')}>
-                                <strong> Our services </strong>
-                            </a>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="/our-team">
-                            <a className={[headerStyle.hover_line].join(' ')}>
-                                <strong> Our Team </strong>
-                            </a>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="/contact">
-                            <a className={[headerStyle.hover_line].join(' ')}>
-                                <strong> Contact </strong>
-                            </a>
-                        </Link>
-                    </li>
-                </ul>
-            </nav>
+  const getHeaderClass = (test) => {
+    if (typeof window !== "undefined") {
+      if (window.location.href != "http://localhost:3000/") {
+        console.log(window.location.href);
+        return headerStyle.header_box;
+      }
+    }
+    return headerStyle.header_box_;
+  };
+
+  return (
+    <div className={getHeaderClass("trest")}>
+      <nav className="navbar d-flex justify-content-between p-4">
+        <div>
+          <Logo />
         </div>
-    );
-}
+        <div>
+          <NavLinks />
+        </div>
+      </nav>
+    </div>
+  );
+};
 
-export default NavBar;
+// class Header extends React.Component {
+//   componentDidMount() {
+//     console.log(window.location.href);
+//   }
+//   render() {
+//     return (
+//       <div>
+//         <h3>Hello world!</h3>
+//       </div>
+//     );
+//   }
+// }
+
+export default Header;
