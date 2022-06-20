@@ -2,11 +2,11 @@ import { useEffect } from "react";
 import Link from "next/link";
 import homeStyle from "../styles/pages/Home.module.scss";
 import Cards from "../components/shared/Card";
-import changeTheme from "../helper/services/shared/theme/changeHeaderTheme";
+import changeHeaderTheme from "../helper/services/shared/theme/changeHeaderTheme";
 
 export default function Home() {
   useEffect(() => {
-    changeTheme("home");
+    changeHeaderTheme("home");
   }, []);
 
   return (

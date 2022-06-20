@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import OurTeamStyle from "../../styles/pages/OurTeam.module.scss";
 import homeStyle from "../../styles/pages/Home.module.scss";
-import Image from "next/image";
-import TeamMembers from "../../components/team-members/index.js";
+import OurTeamSection from "../../components/team-members/OurTeamSection.jsx";
+import changeHeaderTheme from "../../helper/services/shared/theme/changeHeaderTheme";
 
 const OurTeam = () => {
+  useEffect(() => {
+    changeHeaderTheme("contact");
+  }, []);
+
   return (
     <div className={[OurTeamStyle.ourteam_content].join(" ")}>
       {/* Our Team description */}
@@ -27,7 +31,7 @@ const OurTeam = () => {
       </div>
 
       {/* Our Team Members */}
-      <TeamMembers />
+      <OurTeamSection />
     </div>
   );
 };

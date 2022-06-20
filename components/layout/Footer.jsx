@@ -3,9 +3,9 @@ import Copyright from "../shared/Copyright";
 
 const Footer = () => {
   return (
-    <div className={[style.footer_box, "px-5"].join(" ")}>
+    <footer className={[style.footer_box, "px-5"].join(" ")}>
       <Copyright />
-    </div>
+    </footer>
   );
 };
 

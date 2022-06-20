@@ -1,6 +1,10 @@
 @use "./components";
 @use "./helpers" as *;
 
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   padding: 0;
@@ -15,9 +19,13 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+header {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  z-index: 1;
+  color: rgba(255, 255, 255, 0.842);
 }
 
 // Logo
@@ -40,15 +48,4 @@ a {
 
 .dark-menu {
   background: color(dark-purple);
-}
-
-.header {
-  position: absolute;
-  top: 0;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  z-index: 1;
-  padding: 1rem;
-  color: rgba(255, 255, 255, 0.842);
 }
