@@ -16,7 +16,7 @@
     }
 
     & a {
-        color: color(light);
+        color: inherit;
         text-decoration: none;
         @include global-transition;
         &:hover {
@@ -33,11 +33,11 @@
         width: 45%;
         height: 0.2rem;
         border-radius: $main-border-radius;
-        background-color: color(light);
+        background-color: color(dark);
         @include global-transition;
     }
 
     &:hover::after {
-        width: 100%;
+        width: 80%;
     }
 }
