@@ -5,9 +5,7 @@ import MainLayout from "../layouts/MainLayout.jsx";
 function MyApp({ Component, pageProps }) {
   return (
     <MainLayout>
-      <main>
-        <Component {...pageProps} />
-      </main>
+      <Component {...pageProps} />
     </MainLayout>
   );
 }
