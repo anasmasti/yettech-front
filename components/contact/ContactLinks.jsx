@@ -32,7 +32,10 @@ export default function ContactLinks() {
     <>
       <h3 className="fw-bold display-6">
         Avec un seul clique</h3>
-      <div className="d-flex justify-content-between gap-3">
+        <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis velit id voluptatem, reiciendis expedita praesentium similique qui, vel ullam deleniti eos nostrum
+     </p>
+      <div className="d-flex flex-column flex-lg-row justify-content-between gap-3">
              {links.map((link) => (
         <a
           key={link.id}

@@ -4,7 +4,7 @@ import Footer from "../components/layout/Footer.jsx";
 const MainLayout = ({ children }) => {
   return (
     <main>
-      <Header />
+      {/* <Header /> */}
       {children}
       <Footer />
     </main>

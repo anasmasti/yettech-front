@@ -3,10 +3,14 @@ import ContactInfoSection from "./ContactInfoSection";
 
 export default function ContactSection() {
   return (
-    <section className="d-flex justify-content-center align-items-center h-100 pt-5 justify-content-lg-between flex-column">
-      <div className="d-flex justify-content-center align-items-center flex-column flex-lg-row-reverse gap-lg-3 mt-5">
-        <ContactInfoSection />
-        <ContactForm />
+    <section className="">
+      <div className="row mt-5 p-2 p-xl-5">
+        <div className="col-12 col-lg-5">
+          <ContactForm />
+        </div>
+        <div className="col-12 col-lg-7 p-5 main-card mt-4 mt-lg-0 d-lg-flex align-items-lg-center">
+          <ContactInfoSection />
+        </div>
       </div>
     </section>
   );

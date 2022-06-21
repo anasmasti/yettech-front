@@ -10,25 +10,9 @@
 // Main card
 .main-card {
   position: relative;
-  background-color: white;
-  width: 25rem;
-  height: 23rem;
+  background-color: white !important;
   box-shadow: $card-box-shadow;
-  align-items: center;
-  overflow: hidden;
-  margin: 2rem;
   border-radius: $main-border-radius !important;
-  &:hover {
-    & .card--image {
-      transform: scale(1.2);
-    }
-    & .card--content {
-      top: 50%;
-    }
-    & .card--title {
-      display: none;
-    }
-  }
 }
 
 .colored-card {
@@ -40,7 +24,6 @@
   overflow: hidden;
 
   border-radius: $main-border-radius !important;
-
 }
 
 .card--header {

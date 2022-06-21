@@ -35,9 +35,12 @@ export default function ContactInfo() {
   ];
 
   return (
-    <div className="mt-3">
-      <h3 className=" fw-bold display-6">Nos informations</h3>
-      <div className="d-flex flex-row gap-3">
+    <div className="mt-3 mt-lg-5">
+      <h3 className="fw-bold display-6">Nos informations</h3>
+     <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis velit id voluptatem, reiciendis expedita praesentium similique qui, vel ullam deleniti eos nostrum quaerat, error ad totam est consequatur facilis. Maxime.
+     </p>
+      <div className="d-flex flex-column flex-lg-row gap-3">
         {infos.map((info) => (
           <div className="colored-card p-3 text-light">
             <ul className="list-unstyled">
