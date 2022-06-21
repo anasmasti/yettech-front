@@ -1,7 +1,9 @@
 @use "./components";
 @use "./helpers" as *;
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap");
 
 * {
+  font-family: "Rubik", sans-serif;
   box-sizing: border-box;
 }
 
@@ -12,11 +14,7 @@ body {
   background-color: color(body-color);
   background-attachment: fixed;
   background-size: cover;
-  
-}
-
-a {
-  text-decoration: none;
+  color: rgb(87, 87, 87) !important;
 }
 
 header {
@@ -27,10 +25,14 @@ header {
   z-index: 1;
   color: rgba(255, 255, 255, 0.842);
 }
-input, textarea {
-  background: #32205642  !important;
+
+input,
+textarea {
+  background: #32205642 !important;
   border: none !important;
   border-radius: $main-border-radius !important;
+  color: white !important;
+
   &::placeholder {
     color: rgb(206, 206, 206) !important;
     font-weight: 600 !important;

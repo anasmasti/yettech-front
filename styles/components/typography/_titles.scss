@@ -16,3 +16,6 @@
     color: color(dark) !important;
 }
 
+.main-colored-text {
+    color: lighten(color(main-color), 25%)  !important;
+} 

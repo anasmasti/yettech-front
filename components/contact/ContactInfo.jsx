@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function ContactInfo() {
-  let infos = [
+  let contactInfos = [
     {
       id: 1,
       content: [
@@ -34,26 +34,78 @@ export default function ContactInfo() {
     },
   ];
 
+  let horaireInfo = [
+    {
+      id: 1,
+      day_name: "Lundi",
+      horaire: "08h - 18h",
+    },
+    {
+      id: 2,
+      day_name: "Mardi",
+      horaire: "08h - 18h",
+    },
+    {
+      id: 3,
+      day_name: "Mercredi",
+      horaire: "08h - 18h",
+    },
+    {
+      id: 4,
+      day_name: "Jeudi",
+      horaire: "08h - 18h",
+    },
+    {
+      id: 5,
+      day_name: "Vendredi",
+      horaire: "08h - 18h",
+    },
+    {
+      id: 6,
+      day_name: "Samedi",
+      horaire: "08h - 18h",
+    },
+    {
+      id: 7,
+      day_name: "Dimanche",
+      horaire: "08h - 18h",
+    },
+  ];
+  
   return (
-    <div className="mt-3 mt-lg-5">
-      <h3 className="fw-bold display-6">Nos informations</h3>
-     <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis velit id voluptatem, reiciendis expedita praesentium similique qui, vel ullam deleniti eos nostrum quaerat, error ad totam est consequatur facilis. Maxime.
-     </p>
+    <div className="mt-5">
+      <h2 className="fw-bold display-4">Nos informations</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis velit
+        id voluptatem.
+      </p>
+      <h3 className="fw-bold h6">Informations de contat :</h3>
       <div className="d-flex flex-column flex-lg-row gap-3">
-        {infos.map((info) => (
-          <div className="colored-card p-3 text-light">
-            <ul className="list-unstyled">
-              {info.content.map((content) => (
-                <li>
-                  <span className=" fw-bold">{content.title}:</span>{" "}
-                  {content.content}
-                </li>
-              ))}
-            </ul>
-          </div>
+        {contactInfos.map((info) => (
+          <ul key={info.id} className="list-unstyled">
+            {info.content.map((content) => (
+              <li key={content.id}>
+                -{" "}
+                <span className="fw-bold main-colored-text">
+                  {content.title} :
+                </span>{" "}
+                {content.content}
+              </li>
+            ))}
+          </ul>
         ))}
       </div>
+
+      <h3 className="fw-bold h6">Nos horaires :</h3>
+      <ul className="list-unstyled">
+        {horaireInfo.map((day) => (
+          <li key={day.id}>
+            -{" "}
+            <span className="fw-bold main-colored-text">{day.day_name} :</span>{" "}
+            {day.horaire}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
