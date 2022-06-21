@@ -31,6 +31,18 @@
   }
 }
 
+.colored-card {
+  position: relative;
+  background: color(main-color-grad);
+
+  box-shadow: $card-box-shadow;
+  align-items: center;
+  overflow: hidden;
+
+  border-radius: $main-border-radius !important;
+
+}
+
 .card--header {
   width: 100%;
   height: 20%;

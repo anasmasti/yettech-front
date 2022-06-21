@@ -6,40 +6,45 @@ export default function ContactLinks() {
       id: 1,
       title: "WhatsApp",
       url: `https://wa.me/212660548100?text=${message}`,
-      bg_img: "bg-success",
+      bg_img: "whatsapp-btn",
     },
     {
       id: 2,
       title: "Messenger",
       url: "https://m.me/anas.masti.96",
-      bg_img: "bg-success",
+      bg_img: "messenger-btn",
     },
     {
       id: 3,
       title: "Telegram",
       url: "https://t.me/anasmasti",
-      bg_img: "bg-success",
+      bg_img: "telegram-btn",
     },
     {
       id: 4,
       title: "E-mail",
       url: `mailto:anasmasti@hotmail.com?subject='Anas Masti Portfolio' Contact&body=${message}`,
-      bg_img: "bg-success",
+      bg_img: "mail-btn",
     },
   ];
 
   return (
-    <div className="d-flex justify-content-between gap-3 mt-10">
-      {links.map((link) => (
+    <>
+      <h3 className="fw-bold display-6">
+        Avec un seul clique</h3>
+      <div className="d-flex justify-content-between gap-3">
+             {links.map((link) => (
         <a
           key={link.id}
           href={link.url}
           target="_blank"
-          className={`p-3 ${link.bg_img} rounded-xl font-bold text-white  transition-all  duration-300 hover:pt-2 md:hover:pt-5 lg:hover:pt-5`}
+          className={`p-3 ${link.bg_img}`}
         >
           {link.title}
         </a>
       ))}
-    </div>
+      </div>
+ 
+    </>
   );
 }

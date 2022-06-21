@@ -2,16 +2,15 @@
 
 //  Main button
 .main-btn {
-    border: 2px solid color(blur-color);
-    background: transparent;
+    background: color(main-color);
     box-shadow: $btn-box-shadow;
-    color: white;
+    color: color(light) !important;
     border-radius: $main-border-radius !important;
     text-decoration: none;
-    padding: 1rem;
+    font-weight: bold;
     @include global-transition;
     &:hover {
-        background: color(blur-color);
+        background: color(dark);
         color: color(light) !important;
     }
 }
@@ -23,7 +22,7 @@
     color: color(light) !important;
     border-radius: $main-border-radius !important;
     text-decoration: none;
-
+    @include global-transition;
     &:hover {
         background: color(light) !important;
         color: color(dark) !important;
@@ -38,7 +37,7 @@
     color: color(light) !important;
     border-radius: $main-border-radius !important;
     text-decoration: none;
-
+    @include global-transition;
     &:hover {
         background: color(dark);
         color: color(light) !important;
@@ -52,7 +51,7 @@
     color: color(light) !important;
     border-radius: $main-border-radius !important;
     text-decoration: none;
-
+    @include global-transition;
     &:hover {
         background: color(dark);
         color: color(light) !important;
@@ -66,7 +65,67 @@
     color: color(light) !important;
     border-radius: $main-border-radius !important;
     text-decoration: none;
+    @include global-transition;
+    &:hover {
+        background: color(dark);
+        color: color(light) !important;
+    }
+}
 
+.whatsapp-btn {
+    background: linear-gradient(135deg, rgba(0,255,50,1) 11%, rgba(2,139,15,1) 78%);
+    box-shadow: $btn-box-shadow;
+    color: color(light) !important;
+    border-radius: $main-border-radius !important;
+    text-decoration: none;
+    @include global-transition;
+    font-weight: bold !important;
+    
+    &:hover {
+        background: color(dark);
+        color: color(light) !important;
+    }
+}
+
+.messenger-btn {
+    background: color(main-color-grad);
+    box-shadow: $btn-box-shadow;
+    color: color(light) !important;
+    border-radius: $main-border-radius !important;
+    text-decoration: none;
+    @include global-transition;
+    font-weight: bold !important;
+    
+    &:hover {
+        background: color(dark);
+        color: color(light) !important;
+    }
+}
+
+.telegram-btn {
+    background: linear-gradient(135deg, rgba(0,195,255,1) 11%, rgba(2,28,139,1) 78%);
+    box-shadow: $btn-box-shadow;
+    color: color(light) !important;
+    border-radius: $main-border-radius !important;
+    text-decoration: none;
+    @include global-transition;
+    font-weight: bold !important;
+
+    &:hover {
+        background: color(dark);
+        color: color(light) !important;
+    }
+}
+
+.mail-btn {
+    background: linear-gradient(135deg, rgba(255,0,156,1) 11%, rgba(139,2,69,1) 78%);
+    box-shadow: $btn-box-shadow;
+    color: color(light) !important;
+    border-radius: $main-border-radius !important;
+    text-decoration: none;
+    @include global-transition;
+    font-weight: bold !important;
+    
     &:hover {
         background: color(dark);
         color: color(light) !important;

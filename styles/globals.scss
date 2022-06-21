@@ -27,6 +27,15 @@ header {
   z-index: 1;
   color: rgba(255, 255, 255, 0.842);
 }
+input, textarea {
+  background: #32205642  !important;
+  border: none !important;
+  border-radius: $main-border-radius !important;
+  &::placeholder {
+    color: rgb(206, 206, 206) !important;
+    font-weight: 600 !important;
+  }
+}
 
 // Logo
 .logo {
@@ -47,5 +56,5 @@ header {
 }
 
 .dark-menu {
-  background: color(dark-purple);
+  color: #35393f;
 }

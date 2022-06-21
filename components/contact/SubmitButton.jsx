@@ -16,10 +16,10 @@ export default function SubmitButton() {
   return (
     <button
       type="submit"
-      className="btn btn-primary"
+      className="p-3 main-btn mt-3 border-0"
       onClick={() => handleSubmit()}
     >
-      Send
+      Envoyer le message
     </button>
   );
 }

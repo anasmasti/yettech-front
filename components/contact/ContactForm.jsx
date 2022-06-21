@@ -20,7 +20,10 @@ export default function ContactForm() {
 
   return (
     <div className="mt-3">
-      <form className="form-group">
+      <form className="form-group p-5 colored-card">
+        <h2 className="text-light display-3 fw-bold mb-4">
+          Contactez-nous
+        </h2>
         <contactFormContext.Provider value={{ formData, fillFormData }}>
           <ContactFormInputsSection />
           <SubmitButton />
