@@ -30,9 +30,9 @@ export default function ContactLinks() {
 
   return (
     <>
-      <h3 className="fw-bold display-4 mt-5 ">Avec un seul clique</h3>
+      <h3 className="fw-bold mt-5 h3 ">Contactez-nous avec un seul clique :</h3>
     
-      <div className="d-flex flex-column flex-lg-row justify-content-between gap-3">
+      <div className="d-flex flex-column flex-lg-row justify-content-between gap-3 mt-3">
         {links.map((link) => (
           <a
             key={link.id}

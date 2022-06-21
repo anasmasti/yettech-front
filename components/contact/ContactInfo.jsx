@@ -71,25 +71,24 @@ export default function ContactInfo() {
       horaire: "08h - 18h",
     },
   ];
-  
+
   return (
-    <div className="mt-5">
-      <h2 className="fw-bold display-4">Nos informations</h2>
-      <p>
+    <div>
+      <h2 className="fw-bold display-3">Nos informations</h2>
+      <p className="fw-light">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis velit
         id voluptatem.
       </p>
       <h3 className="fw-bold h6">Informations de contat :</h3>
       <div className="d-flex flex-column flex-lg-row gap-3">
         {contactInfos.map((info) => (
-          <ul key={info.id} className="list-unstyled">
+          <ul key={info.id} className="dark-card p-3 list-unstyled">
             {info.content.map((content) => (
               <li key={content.id}>
-                -{" "}
-                <span className="fw-bold main-colored-text">
+                <span className="fw-normal main-colored-text">
                   {content.title} :
                 </span>{" "}
-                {content.content}
+                <span className="fw-bold">{content.content}</span>
               </li>
             ))}
           </ul>
@@ -97,12 +96,14 @@ export default function ContactInfo() {
       </div>
 
       <h3 className="fw-bold h6">Nos horaires :</h3>
-      <ul className="list-unstyled">
+      <ul className="dark-card p-3 list-unstyled">
         {horaireInfo.map((day) => (
           <li key={day.id}>
-            -{" "}
-            <span className="fw-bold main-colored-text">{day.day_name} :</span>{" "}
-            {day.horaire}
+            <span className="fw-normal main-colored-text">
+              {" "}
+              {day.day_name} :
+            </span>{" "}
+            <span className="fw-bold">{day.horaire}</span>
           </li>
         ))}
       </ul>
